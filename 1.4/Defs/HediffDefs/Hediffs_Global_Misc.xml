@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<HediffDef>
+		<defName>VPE_AteBlisscap</defName>
+		<label>high on blisscap</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This person has consumed blisscap, which makes people incredibly high, but also incredibly drowsy.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VPE_AteBlisscap</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<PsychicSensitivity>0.5</PsychicSensitivity>				
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	
+
+
+
+</Defs>

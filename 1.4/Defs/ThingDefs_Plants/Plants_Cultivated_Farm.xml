@@ -1,5 +1,216 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-	
+	<ThingDef ParentName="CavePlantBase">
+		<defName>VPE_Plant_Timbercap</defName>
+		<label>timbercap</label>
+		<description>A short, brown mushroom with a hard stem. When harvested, it yields a small amount of wood-like substance.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Timbercap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>8</growDays>
+			<lifespanDaysPerGrowDays>3.75</lifespanDaysPerGrowDays>
+			<harvestWork>300</harvestWork>
+			<sowWork>180</sowWork>
+			<harvestTag>Wood</harvestTag>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<harvestYield>2</harvestYield>
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.3~0.65</visualSizeRange>
+			<maxMeshCount>4</maxMeshCount>
+			<sowMinSkill>4</sowMinSkill>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="CavePlantBase">
+		<defName>VPE_Plant_Healtruffle</defName>
+		<label>healtruffle</label>
+		<thingClass>VanillaPlantsExpandedMushrooms.Plant_NeedsRotstink</thingClass>
+		<description>Healtruffle is a mushroom that grows slowly by using nutrients from rotstink - it requires a supply of rotstink gas around it in order to grow. Harvesting it gives you herbal medicine. However, it takes a lot of work to plant and collect because it's very delicate. It's been grown for a long time by settlers for its medicinal properties.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Healtruffle</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<growDays>4</growDays>
+			<lifespanDaysPerGrowDays>7.5</lifespanDaysPerGrowDays>
+			<harvestWork>800</harvestWork>
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowWork>800</sowWork>
+			<sowMinSkill>7</sowMinSkill>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>MedicineHerbal</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<immatureGraphicPath>Things/Plant/Healtruffle_Immature</immatureGraphicPath>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.3~0.65</visualSizeRange>
+			<maxMeshCount>4</maxMeshCount>
+			<purpose>Health</purpose>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="CavePlantBase">
+		<defName>VPE_Plant_Stinker</defName>
+		<label>stinker</label>
+		<thingClass>VanillaPlantsExpandedMushrooms.Plant_HandlesLowLightAndReleasesRot</thingClass>
+		<description>A small, fast-growing mushroom that forms large patches. It produces rotstink through a chemical process. Despite its unpleasant odor, it can be harvested for edible fungus. It can grow anywhere, however exposure to sunlight will kill it.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other mushrooms, stinkers can handle light source up to 50% luminosity, such as torches.</description>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Stinker</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>3</growDays>
+			<lifespanDaysPerGrowDays>3.33</lifespanDaysPerGrowDays>
+			<harvestWork>50</harvestWork>
+			<sowWork>45</sowWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<harvestYield>3</harvestYield>
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.3~0.65</visualSizeRange>
+			<maxMeshCount>9</maxMeshCount>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VPE_Plant_Blisscap</defName>
+		<thingClass>VanillaPlantsExpandedMushrooms.Plant_IgnoresLight</thingClass>
+		<label>blisscap</label>
+		<description>A long, light-blue mushroom that offers more than just sustenance. Eating it induces a state of blissful happiness, making the consumer exceptionally content, yet notably drowsy. It is known to greatly enhance the psychic sensitivity of whoever eats it, and is often consumed by hippie communities on various core planets, allowing them to ‘see into the future’.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other plants, blisscap ignores light levels for growth. Sunlight won't destroy it. It will still rest during the night period.</description>
+		<graphicData>
+			<texPath>Things/Plant/Blisscap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<minifiedDef IsNull="True"/>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<plant>
+			<neverBlightable>true</neverBlightable>
+			<fertilityMin>0.3</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growMinGlow>0</growMinGlow>
+			<growDays>9</growDays>
+			<lifespanDaysPerGrowDays>3.33</lifespanDaysPerGrowDays>
+			<harvestWork>240</harvestWork>
+			<sowWork>170</sowWork>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>VPE_Blisscap</harvestedThingDef>
+			<burnedThingDef IsNull="True"/>
+			<harvestYield>4</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.3~0.65</visualSizeRange>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VPE_Plant_Lullabloom</defName>
+		<thingClass>VanillaPlantsExpandedMushrooms.Plant_IgnoresLight</thingClass>
+		<label>lullabloom</label>
+		<description>A special kind of mushroom that emits calming spores, ideal for planting next to a bed. Its presence soothes the sleeping individual, creating a more restful slumber and promoting overall comfort. Its gentle, sleep-inducing properties make it a favorite among colonists seeking a peaceful night's rest.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other plants, blisscap ignores light levels for growth. Sunlight won't destroy it. It will still rest during the night period.\n\nNullifies the "disturbed sleep" thought.\n\nWill link to vanilla and Vanilla Furniture Expanded beds.</description>
+		<graphicData>
+			<texPath>Things/Plant/Lullabloom</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<minifiedDef IsNull="True"/>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<plant>
+			<neverBlightable>true</neverBlightable>
+			<fertilityMin>0.6</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<growMinGlow>0</growMinGlow>
+			<sowMinSkill>5</sowMinSkill>
+			<growDays>2.5</growDays>
+			<lifespanDaysPerGrowDays>4.8</lifespanDaysPerGrowDays>
+			<harvestWork>200</harvestWork>
+			<sowWork>1020</sowWork>
+			<dieIfLeafless>true</dieIfLeafless>
+			<burnedThingDef IsNull="True"/>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<visualSizeRange>1~1.5</visualSizeRange>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.02</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>6</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

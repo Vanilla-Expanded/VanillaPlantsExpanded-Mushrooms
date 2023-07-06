@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VPE_Blisscap</defName>
+		<label>raw blisscap</label>
+		<description>Raw blisscap obtained by harvesting blisscap mushrooms. When eaten, makes people incredibly high, but also incredibly drowsy.</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/Blisscap</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Fungus</foodType>
+			<tasteThought>VPE_AteBlisscap</tasteThought>
+			<specialThoughtAsIngredient>VPE_AteBlisscap</specialThoughtAsIngredient>
+			<joyKind>Chemical</joyKind>
+			<joy>0.4</joy>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>40</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
