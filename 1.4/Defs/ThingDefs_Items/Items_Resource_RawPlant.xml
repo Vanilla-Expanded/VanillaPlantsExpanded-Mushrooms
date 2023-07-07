@@ -1,5 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>VPE_Bileceps</defName>
+		<label>raw bileceps</label>
+		<description>Harvested bileceps. Can be cooked into meals or eaten raw.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Bileceps</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>2</daysToRotStart>
+				<rotDestroys>True</rotDestroys>
+			</li>
+		</comps>
+		<statBases>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+			<Mass>0.03</Mass>
+			<Beauty>-8</Beauty>
+			<MarketValue>1.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Fungus</foodType>
+			<preferability>DesperateOnly</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+		</ingestible>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+	</ThingDef>
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VPE_Blisscap</defName>
 		<label>raw blisscap</label>

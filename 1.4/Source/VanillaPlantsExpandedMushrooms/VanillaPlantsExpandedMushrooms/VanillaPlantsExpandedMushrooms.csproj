@@ -299,7 +299,9 @@
     <Compile Include="Harmony\Pawn_CheckForDisturbedSleep.cs" />
     <Compile Include="Plants\Plant_HandlesLowLightAndReleasesRot.cs" />
     <Compile Include="Plants\Plant_IgnoresLight.cs" />
+    <Compile Include="Plants\Plant_NeedsCorpseBile.cs" />
     <Compile Include="Plants\Plant_NeedsRotstink.cs" />
+    <Compile Include="Plants\Plant_ReleasesGas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

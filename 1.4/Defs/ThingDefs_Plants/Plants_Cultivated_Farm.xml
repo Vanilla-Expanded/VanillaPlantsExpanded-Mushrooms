@@ -213,4 +213,139 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<ThingDef ParentName="CavePlantBase">
+		<defName>VPE_Plant_Bileceps</defName>
+		<label>bileceps</label>
+		<thingClass>VanillaPlantsExpandedMushrooms.Plant_NeedsCorpseBile</thingClass>
+		<description>Bileceps is a peculiar, coral-like mushroom that thrives on the bile of decaying bodies. Despite its unappetizing source, it possesses a meaty flavor and offers a protein-rich harvest. Its distinctive, cancerous appearance does little to deter colonists from utilizing it as an alternate source of meat.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Requires corpse bile on its tile to grow properly. Time to get a Helixien slug!</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Bileceps</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<growDays>8</growDays>
+			<lifespanDaysPerGrowDays>3.75</lifespanDaysPerGrowDays>
+			<harvestWork>1260</harvestWork>
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowWork>200</sowWork>
+			<sowMinSkill>7</sowMinSkill>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VPE_Bileceps</harvestedThingDef>
+			<harvestYield>2</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.3~0.65</visualSizeRange>
+			<maxMeshCount>4</maxMeshCount>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="CavePlantBase">
+		<defName>VPE_Plant_Glowcap</defName>
+		<label>glowcap</label>
+		<description>A small blue mushroom typically found in caves. The smell it emits is absolutely repulsive - but it tastes surprisingly good when cooked. It lights up the area around it, but the light is not strong enough to grow crops.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Glowcap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<altitudeLayer>Item</altitudeLayer>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>60</growDays>
+			<harvestWork>300</harvestWork>
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowWork>750</sowWork>
+			<sowMinSkill>4</sowMinSkill>
+			<harvestYield>20</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<sowTags>
+				<li>Ground</li>
+				<li>Decorative</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.65~1</visualSizeRange>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5.9</glowRadius>
+				<glowColor>(10,50,64,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="CavePlantBase">
+		<defName>VPE_Plant_Redcap</defName>
+		<label>redcap</label>
+		<description>A cultivated mushroom with a beautiful red cap and a somewhat short lifespan. Recaps are beautiful, but may need to be replanted often.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.05</Nutrition>
+			<Beauty>14</Beauty>
+			<BeautyOutdoors>14</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Redcap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<altitudeLayer>Item</altitudeLayer>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>2</growDays>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<harvestWork>200</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowWork>580</sowWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Decorative</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.65~1</visualSizeRange>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
 </Defs>
