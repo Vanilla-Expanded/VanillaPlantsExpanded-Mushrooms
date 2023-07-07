@@ -38,6 +38,10 @@
 			<sowResearchPrerequisites Inherit="False">
 				<li>ToxGas</li>
 			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Ground</li>
+				
+			</sowTags>
 			<sowMinSkill>8</sowMinSkill>
 		</plant>
 	</ThingDef>
