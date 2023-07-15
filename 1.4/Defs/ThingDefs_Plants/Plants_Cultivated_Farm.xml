@@ -348,4 +348,104 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
+	<ThingDef ParentName="CavePlantBase">
+		<defName>VPE_Plant_Zapcap</defName>
+		<label>zapcap</label>
+		<description>A large, bulbous, beige mushroom that is known to produce small amounts of electricity as it grows. Needs to be placed on power conduits in order to use the newly produced energy. In case of an electrical short, zapcaps amplify the released energy, causing significantly more damage.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Zapcap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<plant>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>12</growDays>
+			<lifespanDaysPerGrowDays>4</lifespanDaysPerGrowDays>
+			<harvestWork>220</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowWork>200</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Electricity</li>
+			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.65~1</visualSizeRange>
+		</plant>
+		<!--<comps>
+			<li Class="CompProperties_Power">
+				<compClass>VanillaPlantsExpandedMushrooms.CompPowerProducingPlant</compClass>
+				<basePowerConsumption>-10</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+		</comps>-->
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VPE_Plant_Thermoregulus</defName>
+		<label>thermoregulus</label>
+		<thingClass>VanillaPlantsExpandedMushrooms.Plant_Thermoregulating</thingClass>
+		<description>A rare, large mushroom that needs to be grown in flower pots. Once mature, thermoregulus emits varying temperature depending on the ambient temperature around it. At all times it will aim to bring the temperature of the room it’s in to 16C. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other mushroom, sunlight won't destroy it.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<minifiedDef IsNull="True"/>
+		<graphicData>
+			<texPath>Things/Plant/Thermoregulus_Immature</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<altitudeLayer>Item</altitudeLayer>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<plant>
+			<neverBlightable>true</neverBlightable>
+			<growMinGlow>0</growMinGlow>
+			<burnedThingDef IsNull="True"/>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>12</growDays>
+			<lifespanDaysPerGrowDays>7.166</lifespanDaysPerGrowDays>
+			<harvestWork>120</harvestWork>
+			<immatureGraphicPath>Things/Plant/Thermoregulus_Immature</immatureGraphicPath>
+			<harvestTag>Standard</harvestTag>
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowWork>380</sowWork>		
+			<sowMinSkill>8</sowMinSkill>			
+			<sowTags>
+				<li>Decorative</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.65~1</visualSizeRange>
+		</plant>
+		
+	</ThingDef>
 </Defs>
