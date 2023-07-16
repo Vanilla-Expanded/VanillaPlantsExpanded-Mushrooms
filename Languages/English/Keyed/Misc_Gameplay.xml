@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	
+	<VPE_MushroomGrowingZone>Mushroom Growing Zone</VPE_MushroomGrowingZone>
+	<VPE_MushroomGrowingZoneDesc>Create a zone where your colonists will try to grow mushrooms.</VPE_MushroomGrowingZoneDesc>
 
 
 </LanguageData>

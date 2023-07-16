@@ -33,6 +33,7 @@
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
+				<li>VPE_Mushroom</li>
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
 			<cavePlantWeight>0</cavePlantWeight>
@@ -77,6 +78,7 @@
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
+				<li>VPE_Mushroom</li>
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
 			<cavePlantWeight>0</cavePlantWeight>
@@ -120,6 +122,7 @@
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
+				<li>VPE_Mushroom</li>
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
 			<cavePlantWeight>0</cavePlantWeight>
@@ -160,6 +163,7 @@
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
+				<li>VPE_Mushroom</li>
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
 			<maxMeshCount>4</maxMeshCount>
@@ -198,6 +202,7 @@
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
+				<li>VPE_Mushroom</li>
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
 			<visualSizeRange>1~1.5</visualSizeRange>
@@ -248,6 +253,7 @@
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
+				<li>VPE_Mushroom</li>
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
 			<cavePlantWeight>0</cavePlantWeight>
@@ -293,6 +299,7 @@
 			<sowTags>
 				<li>Ground</li>
 				<li>Decorative</li>
+				<li>VPE_Mushroom</li>
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
 			<cavePlantWeight>0</cavePlantWeight>
@@ -341,6 +348,7 @@
 			<sowTags>
 				<li>Ground</li>
 				<li>Decorative</li>
+				<li>VPE_Mushroom</li>
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
 			<cavePlantWeight>0</cavePlantWeight>
@@ -351,6 +359,7 @@
 	<ThingDef ParentName="CavePlantBase">
 		<defName>VPE_Plant_Zapcap</defName>
 		<label>zapcap</label>
+	
 		<description>A large, bulbous, beige mushroom that is known to produce small amounts of electricity as it grows. Needs to be placed on power conduits in order to use the newly produced energy. In case of an electrical short, zapcaps amplify the released energy, causing significantly more damage.</description>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -384,6 +393,7 @@
 			</sowResearchPrerequisites>
 			<sowTags>
 				<li>Ground</li>
+				<li>VPE_Mushroom</li>
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
 			<cavePlantWeight>0</cavePlantWeight>
@@ -437,8 +447,8 @@
 			<immatureGraphicPath>Things/Plant/Thermoregulus_Immature</immatureGraphicPath>
 			<harvestTag>Standard</harvestTag>
 			<dieIfLeafless>true</dieIfLeafless>
-			<sowWork>380</sowWork>		
-			<sowMinSkill>8</sowMinSkill>			
+			<sowWork>380</sowWork>
+			<sowMinSkill>8</sowMinSkill>
 			<sowTags>
 				<li>Decorative</li>
 			</sowTags>
@@ -446,6 +456,94 @@
 			<cavePlantWeight>0</cavePlantWeight>
 			<visualSizeRange>0.65~1</visualSizeRange>
 		</plant>
-		
+	</ThingDef>
+	<ThingDef ParentName="CavePlantBase">
+		<defName>VPE_Plant_Foampuffer</defName>
+		<label>foampuffer</label>
+		<thingClass>VanillaPlantsExpandedMushrooms.Plant_Firefoam</thingClass>
+		<description>An ugly, thick mushroom with a cap that smells of muffalo fecal matter. It needs to be grown in flower pots. If it comes into contact with fire once matured, it explodes, ejecting a spray of firefoam over a short distance.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+			<Beauty>-8</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Foampuffer</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<tickerType>Rare</tickerType>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Foampuffer_Immature</immatureGraphicPath>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>3</growDays>
+			<lifespanDaysPerGrowDays>21.33</lifespanDaysPerGrowDays>
+			<harvestWork>100</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowWork>360</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Firefoam</li>
+			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Ground</li>
+				<li>Decorative</li>
+				<li>VPE_Mushroom</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.65~1</visualSizeRange>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="CavePlantBase">
+		<defName>VPE_Plant_MycothreadMushroom</defName>
+		<label>mycothread mushroom</label>
+		<description>This mushroom has been cultivated for ages by tunneler mining colonies, as it produces a thick but flexible cotton-like fabric which can be used to craft ropes, clothing and furniture. While it takes an incredibly long time to grow, and dies when exposed to any sort of light, for some colonies it is the only reliable way of obtaining good quality textiles.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MycothreadMushroom</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<plant>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>16.5</growDays>
+			<harvestWork>450</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VPE_Mycothread</harvestedThingDef>
+			<harvestYield>8</harvestYield>
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowWork>400</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>VPE_Mushroom</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.65~1</visualSizeRange>
+		</plant>
 	</ThingDef>
 </Defs>

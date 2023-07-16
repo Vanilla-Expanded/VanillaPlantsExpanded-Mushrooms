@@ -294,11 +294,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\WorkGiver_GrowerHarvestMushroom.cs" />
+    <Compile Include="AI\WorkGiver_GrowerMushroom.cs" />
+    <Compile Include="AI\WorkGiver_GrowerSowMushroom.cs" />
     <Compile Include="Comps\CompPowerProducingPlant.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Defs\MushroomGrowZoneTerrainsDef.cs" />
+    <Compile Include="Designators\Designator_MushroomGrowingZone.cs" />
+    <Compile Include="Designators\Designator_MushroomGrowingZone_Expand.cs" />
     <Compile Include="GraphicsCache\GraphicsCache.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Harmony\HaulAIUtility_HaulablePlaceValidator.cs" />
     <Compile Include="Harmony\Pawn_CheckForDisturbedSleep.cs" />
+    <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
+    <Compile Include="Plants\Plant_Firefoam.cs" />
     <Compile Include="Plants\Plant_HandlesLowLightAndReleasesRot.cs" />
     <Compile Include="Plants\Plant_IgnoresLight.cs" />
     <Compile Include="Plants\Plant_NeedsCorpseBile.cs" />
@@ -306,6 +315,7 @@
     <Compile Include="Plants\Plant_Thermoregulating.cs" />
     <Compile Include="Plants\Plant_ReleasesGas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Zones\Zone_GrowingMushroom.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
