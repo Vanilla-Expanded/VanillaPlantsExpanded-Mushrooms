@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="CavePlantBase">
 		<defName>VPE_Plant_Timbercap</defName>
@@ -356,11 +356,12 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
+	
 	<ThingDef ParentName="CavePlantBase">
 		<defName>VPE_Plant_Zapcap</defName>
 		<label>zapcap</label>
-	
 		<description>A large, bulbous, beige mushroom that is known to produce small amounts of electricity as it grows. Needs to be placed on power conduits in order to use the newly produced energy. In case of an electrical short, zapcaps amplify the released energy, causing significantly more damage.</description>
+		<thingClass>VanillaPlantsExpandedMushrooms.ZapcapPlant</thingClass>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Nutrition>0.1</Nutrition>
@@ -399,15 +400,46 @@
 			<cavePlantWeight>0</cavePlantWeight>
 			<visualSizeRange>0.65~1</visualSizeRange>
 		</plant>
-		<!--<comps>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>VPE_Building_Zapcap</defName>
+		<label>zapcap</label>
+		<description>A large, bulbous, beige mushroom that is known to produce small amounts of electricity as it grows. Needs to be placed on power conduits in order to use the newly produced energy. In case of an electrical short, zapcaps amplify the released energy, causing significantly more damage.</description>
+		<thingClass>VanillaPlantsExpandedMushrooms.ZapcapBuilding</thingClass>
+		<graphicData>
+			<texPath>Things/Mote/Transparent</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Floor</altitudeLayer>
+		<rotatable>false</rotatable>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>false</selectable>
+		<size>(1,1)</size>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<blockPlants>false</blockPlants>
+		<category>Building</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<building>
+			<isEdifice>false</isEdifice>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>VanillaPlantsExpandedMushrooms.CompPowerProducingPlant</compClass>
 				<basePowerConsumption>-10</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 				<shortCircuitInRain>true</shortCircuitInRain>
 			</li>
-		</comps>-->
+		</comps>
 	</ThingDef>
+
 	<ThingDef ParentName="PlantBase">
 		<defName>VPE_Plant_Thermoregulus</defName>
 		<label>thermoregulus</label>

@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using Verse;
 using RimWorld;
 
@@ -20,10 +19,10 @@ namespace VanillaPlantsExpandedMushrooms
         {
             get
             {
-                Plant plant = this.parent as Plant;
-                if (plant != null)
+                var building = this.parent as ZapcapBuilding;
+                if (building.source != null)
                 {
-                    return plant.Growth;
+                    return building.source.Growth;
                 }
                 else return 0;
                 

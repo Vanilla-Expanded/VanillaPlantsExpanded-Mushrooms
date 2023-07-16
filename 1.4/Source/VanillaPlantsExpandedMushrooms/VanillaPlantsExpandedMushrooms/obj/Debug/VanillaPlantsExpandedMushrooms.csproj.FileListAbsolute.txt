@@ -1,4 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaPlantsExpanded-Mushrooms\1.4\Assemblies\VanillaPlantsExpandedMushrooms.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaPlantsExpanded-Mushrooms\1.4\Source\VanillaPlantsExpandedMushrooms\VanillaPlantsExpandedMushrooms\obj\Debug\VanillaPlantsExpandedMushrooms.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaPlantsExpanded-Mushrooms\1.4\Source\VanillaPlantsExpandedMushrooms\VanillaPlantsExpandedMushrooms\obj\Debug\VanillaPlantsExpandedMushrooms.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaPlantsExpanded-Mushrooms\1.4\Source\VanillaPlantsExpandedMushrooms\VanillaPlantsExpandedMushrooms\obj\Debug\VanillaPlantsExpandedMushrooms.dll

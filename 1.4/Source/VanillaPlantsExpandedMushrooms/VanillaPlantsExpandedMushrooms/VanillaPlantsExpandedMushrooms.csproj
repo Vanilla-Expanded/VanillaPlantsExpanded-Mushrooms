@@ -298,6 +298,9 @@
     <Compile Include="AI\WorkGiver_GrowerMushroom.cs" />
     <Compile Include="AI\WorkGiver_GrowerSowMushroom.cs" />
     <Compile Include="Comps\CompPowerProducingPlant.cs" />
+    <Compile Include="Harmony\MouseoverReadout_MouseoverReadoutOnGUI_Patch.cs" />
+    <Compile Include="Plants\ZapcapBuilding.cs" />
+    <Compile Include="Plants\ZapcapPlant.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Defs\MushroomGrowZoneTerrainsDef.cs" />
     <Compile Include="Designators\Designator_MushroomGrowingZone.cs" />
