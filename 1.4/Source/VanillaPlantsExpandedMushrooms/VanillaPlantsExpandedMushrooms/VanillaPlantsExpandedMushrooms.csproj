@@ -299,6 +299,8 @@
     <Compile Include="AI\WorkGiver_GrowerSowMushroom.cs" />
     <Compile Include="Comps\CompPowerProducingPlant.cs" />
     <Compile Include="Harmony\MouseoverReadout_MouseoverReadoutOnGUI_Patch.cs" />
+    <Compile Include="Harmony\ShortCircuitUtility_DoShortCircuit_Patch.cs" />
+    <Compile Include="Harmony\ShortCircuitUtility_DrainBatteriesAndCauseExplosion_Patch.cs" />
     <Compile Include="Plants\ZapcapBuilding.cs" />
     <Compile Include="Plants\ZapcapPlant.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
