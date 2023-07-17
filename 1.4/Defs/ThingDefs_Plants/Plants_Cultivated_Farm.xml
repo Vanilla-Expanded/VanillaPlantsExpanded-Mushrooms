@@ -175,7 +175,7 @@
 		<defName>VPE_Plant_Lullabloom</defName>
 		<thingClass>VanillaPlantsExpandedMushrooms.Plant_IgnoresLight</thingClass>
 		<label>lullabloom</label>
-		<description>A special kind of mushroom that emits calming spores, ideal for planting next to a bed. Its presence soothes the sleeping individual, creating a more restful slumber and promoting overall comfort. Its gentle, sleep-inducing properties make it a favorite among colonists seeking a peaceful night's rest.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other plants, blisscap ignores light levels for growth. Sunlight won't destroy it. It will still rest during the night period.\n\nNullifies the "disturbed sleep" thought.\n\nWill link to vanilla and Vanilla Furniture Expanded beds.</description>
+		<description>A special kind of mushroom that emits calming spores, ideal for planting next to a bed. Needs to be planted in a flower pot. Its presence soothes the sleeping individual, creating a more restful slumber and promoting overall comfort. Its gentle, sleep-inducing properties make it a favorite among colonists seeking a peaceful night's rest.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other plants, blisscap ignores light levels for growth. Sunlight won't destroy it. It will still rest during the night period.\n\nNullifies the "disturbed sleep" thought.\n\nWill link to vanilla and Vanilla Furniture Expanded beds.</description>
 		<graphicData>
 			<texPath>Things/Plant/Lullabloom</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -187,6 +187,7 @@
 		</statBases>
 		<selectable>true</selectable>
 		<pathCost>14</pathCost>
+		<altitudeLayer>Item</altitudeLayer>
 		<plant>
 			<neverBlightable>true</neverBlightable>
 			<fertilityMin>0.6</fertilityMin>
@@ -200,12 +201,11 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<burnedThingDef IsNull="True"/>
 			<sowTags>
-				<li>Ground</li>
-				<li>Hydroponic</li>
-				<li>VPE_Mushroom</li>
+				<li>Decorative</li>
+				
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
-			<visualSizeRange>1~1.5</visualSizeRange>
+			<visualSizeRange>0.65~0.85</visualSizeRange>
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 		</plant>
 		<comps>

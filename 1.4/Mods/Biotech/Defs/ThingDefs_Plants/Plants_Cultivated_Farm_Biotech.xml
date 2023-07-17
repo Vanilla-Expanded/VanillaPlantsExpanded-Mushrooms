@@ -28,7 +28,7 @@
 			<neverBlightable>true</neverBlightable>
 			<burnedThingDef IsNull="True"/>
 			<growMinGlow>0</growMinGlow>
-			<burnedThingDef IsNull="True"/>
+		
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<fertilityMin>0</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
