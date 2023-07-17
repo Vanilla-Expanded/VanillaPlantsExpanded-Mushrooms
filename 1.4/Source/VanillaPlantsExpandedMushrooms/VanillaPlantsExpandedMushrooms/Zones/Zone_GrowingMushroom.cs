@@ -44,11 +44,11 @@ namespace VanillaPlantsExpandedMushrooms
 
         private static IEnumerable<Color> MushroomZoneColors()
         {
-            yield return Color.Lerp(new Color(0f, 0f, 1f), Color.gray, 0.5f);
-            yield return Color.Lerp(new Color(0f, 0.5f, 1f), Color.gray, 0.5f);
-            yield return Color.Lerp(new Color(0f, 0.25f, 1f), Color.gray, 0.5f);
-            yield return Color.Lerp(new Color(0.25f, 0.25f, 0.75f), Color.gray, 0.5f);
-            yield return Color.Lerp(new Color(0.25f, 0f, 0.65f), Color.gray, 0.5f);
+            yield return Color.Lerp(new Color(0.5f, 0.5f, 0.5f), Color.gray, 0.5f);
+            yield return Color.Lerp(new Color(0.4f, 0.4f, 0.4f), Color.gray, 0.5f);
+            yield return Color.Lerp(new Color(0.25f, 0.25f, 0.25f), Color.gray, 0.5f);
+            yield return Color.Lerp(new Color(0.15f, 0.15f, 0.15f), Color.gray, 0.5f);
+           
             yield break;
         }
 

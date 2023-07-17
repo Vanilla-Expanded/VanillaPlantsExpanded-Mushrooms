@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 
 namespace VanillaPlantsExpandedMushrooms
 {
-    public class WorkGiver_GrowerSowAquatic : WorkGiver_GrowerMushroom
+    public class WorkGiver_GrowerSowMushroom : WorkGiver_GrowerMushroom
     {
         protected static string CantSowCavePlantBecauseOfLightTrans;
 
