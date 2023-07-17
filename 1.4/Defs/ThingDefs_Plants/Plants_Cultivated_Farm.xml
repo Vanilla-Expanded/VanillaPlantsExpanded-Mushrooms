@@ -307,7 +307,7 @@
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>5.9</glowRadius>
+				<glowRadius>8.9</glowRadius>
 				<glowColor>(10,50,64,0)</glowColor>
 			</li>
 		</comps>
@@ -356,7 +356,6 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
-	
 	<ThingDef ParentName="CavePlantBase">
 		<defName>VPE_Plant_Zapcap</defName>
 		<label>zapcap</label>
@@ -401,7 +400,6 @@
 			<visualSizeRange>0.65~1</visualSizeRange>
 		</plant>
 	</ThingDef>
-
 	<ThingDef>
 		<defName>VPE_Building_Zapcap</defName>
 		<label>zapcap</label>
@@ -439,7 +437,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-
 	<ThingDef ParentName="PlantBase">
 		<defName>VPE_Plant_Thermoregulus</defName>
 		<label>thermoregulus</label>
@@ -489,11 +486,12 @@
 			<visualSizeRange>0.65~1</visualSizeRange>
 		</plant>
 	</ThingDef>
-	<ThingDef ParentName="CavePlantBase">
+	<ThingDef ParentName="PlantBase">
 		<defName>VPE_Plant_Foampuffer</defName>
 		<label>foampuffer</label>
 		<thingClass>VanillaPlantsExpandedMushrooms.Plant_Firefoam</thingClass>
 		<description>An ugly, thick mushroom with a cap that smells of muffalo fecal matter. It needs to be grown in flower pots. If it comes into contact with fire once matured, it explodes, ejecting a spray of firefoam over a short distance.</description>
+		<minifiedDef IsNull="True"/>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Nutrition>0.1</Nutrition>
@@ -510,10 +508,16 @@
 		<selectable>true</selectable>
 		<pathCost>14</pathCost>
 		<tickerType>Rare</tickerType>
+		<altitudeLayer>Item</altitudeLayer>
 		<ingestible>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 		<plant>
+			<neverBlightable>true</neverBlightable>
+			<burnedThingDef IsNull="True"/>
+			<growMinGlow>0</growMinGlow>
+			<burnedThingDef IsNull="True"/>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<immatureGraphicPath>Things/Plant/Foampuffer_Immature</immatureGraphicPath>
 			<fertilityMin>0</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
@@ -528,7 +532,7 @@
 				<li>Firefoam</li>
 			</sowResearchPrerequisites>
 			<sowTags>
-				<li>Ground</li>
+				
 				<li>Decorative</li>
 				<li>VPE_Mushroom</li>
 			</sowTags>

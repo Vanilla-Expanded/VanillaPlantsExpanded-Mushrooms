@@ -5,6 +5,7 @@
 		<allowedTerrains>
 			<li>Gravel</li>
 			<li>_Rough</li>
+			<li>Soil</li>
 		</allowedTerrains>
 	</VanillaPlantsExpandedMushrooms.MushroomGrowZoneTerrainsDef>
 </Defs>
