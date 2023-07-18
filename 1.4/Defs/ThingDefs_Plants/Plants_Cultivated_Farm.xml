@@ -288,7 +288,7 @@
 		<plant>
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
-			<growDays>60</growDays>
+			<growDays>6</growDays>
 			<harvestWork>300</harvestWork>
 			<dieIfLeafless>true</dieIfLeafless>
 			<sowWork>750</sowWork>
