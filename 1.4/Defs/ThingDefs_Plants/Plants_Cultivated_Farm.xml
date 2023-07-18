@@ -516,7 +516,7 @@
 			<neverBlightable>true</neverBlightable>
 			<burnedThingDef IsNull="True"/>
 			<growMinGlow>0</growMinGlow>
-			<burnedThingDef IsNull="True"/>
+		
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<immatureGraphicPath>Things/Plant/Foampuffer_Immature</immatureGraphicPath>
 			<fertilityMin>0</fertilityMin>
