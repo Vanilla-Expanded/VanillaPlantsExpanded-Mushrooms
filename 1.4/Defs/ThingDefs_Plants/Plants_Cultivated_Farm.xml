@@ -175,7 +175,7 @@
 		<defName>VPE_Plant_Lullabloom</defName>
 		<thingClass>VanillaPlantsExpandedMushrooms.Plant_IgnoresLight</thingClass>
 		<label>lullabloom</label>
-		<description>A special kind of mushroom that emits calming spores, ideal for planting next to a bed. Needs to be planted in a flower pot. Its presence soothes the sleeping individual, creating a more restful slumber and promoting overall comfort. Its gentle, sleep-inducing properties make it a favorite among colonists seeking a peaceful night's rest.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other plants, blisscap ignores light levels for growth. Sunlight won't destroy it. It will still rest during the night period.\n\nNullifies the "disturbed sleep" thought.\n\nWill link to vanilla and Vanilla Furniture Expanded beds.</description>
+		<description>A special kind of mushroom that emits calming spores, ideal for planting next to a bed. Needs to be planted in a flower pot. Its presence soothes the sleeping individual, creating a more restful slumber and promoting overall comfort. Its gentle, sleep-inducing properties make it a favorite among colonists seeking a peaceful night's rest.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other plants, lullabloom ignores light levels for growth. Sunlight won't destroy it. It will still rest during the night period.\n\nNullifies the "disturbed sleep" thought.\n\nWill link to vanilla and Vanilla Furniture Expanded beds.</description>
 		<graphicData>
 			<texPath>Things/Plant/Lullabloom</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
