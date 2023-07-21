@@ -14,6 +14,10 @@ namespace VanillaPlantsExpandedMushrooms
             {
                 FleckMaker.Static(this.Position, this.Map, InternalDefOf.BlastEMP);
             }
+            if (this.source.DestroyedOrNull())
+            {
+                this.Destroy();
+            }
         }
 
         public override void ExposeData()
