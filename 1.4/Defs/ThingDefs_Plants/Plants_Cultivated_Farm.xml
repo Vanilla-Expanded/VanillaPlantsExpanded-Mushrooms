@@ -152,7 +152,7 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growMinGlow>0</growMinGlow>
 			<growDays>9</growDays>
-			<lifespanDaysPerGrowDays>3.33</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>6</lifespanDaysPerGrowDays>
 			<harvestWork>240</harvestWork>
 			<sowWork>170</sowWork>
 			<dieIfLeafless>true</dieIfLeafless>

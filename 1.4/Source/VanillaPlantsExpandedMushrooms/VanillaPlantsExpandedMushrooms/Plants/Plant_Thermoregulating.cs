@@ -15,6 +15,19 @@ namespace VanillaPlantsExpandedMushrooms
         public bool isCold = true;
 
 
+        public override float GrowthRate
+        {
+            get
+            {
+
+                if (base.Spawned && !PlantUtility.GrowthSeasonNow(base.Position, base.Map, false))
+                {
+                    return 0f;
+                }
+                return this.GrowthRateFactor_Fertility * this.GrowthRateFactor_Temperature;
+            }
+        }
+
         public override void Tick()
         {
             if (this.IsHashIntervalTick(60))
