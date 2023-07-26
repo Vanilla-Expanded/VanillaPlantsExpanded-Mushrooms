@@ -26,6 +26,12 @@ namespace VanillaPlantsExpandedMushrooms
             }
         }
 
-       
+        public new float GrowthRateFactor_Light
+        {
+            get { return 1f; }
+
+        }
+
+
     }
 }

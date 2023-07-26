@@ -57,6 +57,12 @@ namespace VanillaPlantsExpandedMushrooms
 
         }
 
+        public new float GrowthRateFactor_Light
+        {
+            get { return 1f; }
+
+        }
+
         public void FirefoamExplosion()
         {
             GenExplosion.DoExplosion(instigator: this, center: PositionHeld, map: Map, radius: 1.9f, damType: DamageDefOf.Extinguish, 

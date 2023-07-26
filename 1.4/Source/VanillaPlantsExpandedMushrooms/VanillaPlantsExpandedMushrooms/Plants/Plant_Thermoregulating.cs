@@ -28,6 +28,12 @@ namespace VanillaPlantsExpandedMushrooms
             }
         }
 
+        public new float GrowthRateFactor_Light
+        {
+            get { return 1f; }
+
+        }
+
         public override void Tick()
         {
             if (this.IsHashIntervalTick(60))
