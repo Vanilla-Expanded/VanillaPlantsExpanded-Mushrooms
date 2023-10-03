@@ -39,6 +39,7 @@
 			<cavePlantWeight>0</cavePlantWeight>
 			<visualSizeRange>0.3~0.65</visualSizeRange>
 			<maxMeshCount>4</maxMeshCount>
+			 <treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<sowMinSkill>4</sowMinSkill>
 		</plant>
 	</ThingDef>
