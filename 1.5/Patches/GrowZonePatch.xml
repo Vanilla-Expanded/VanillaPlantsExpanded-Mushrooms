@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>/Defs/DesignationCategoryDef[defName = "Zone"]/specialDesignatorClasses/li[6]</xpath>
+		<value>
+			<li>VanillaPlantsExpandedMushrooms.Designator_MushroomGrowingZone</li>
+
+		</value>
+	</Operation>
+
+	
+
+
+</Patch>

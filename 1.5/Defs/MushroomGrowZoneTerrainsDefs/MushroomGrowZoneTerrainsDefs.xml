@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VanillaPlantsExpandedMushrooms.MushroomGrowZoneTerrainsDef>
+		<defName>VPE_MushroomGrowZoneTerrains</defName>
+		<allowedTerrains>
+			<li>Gravel</li>
+			<li>_Rough</li>
+			<li>Soil</li>
+		</allowedTerrains>
+	</VanillaPlantsExpandedMushrooms.MushroomGrowZoneTerrainsDef>
+</Defs>

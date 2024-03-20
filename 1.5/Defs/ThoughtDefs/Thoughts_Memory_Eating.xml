@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VPE_AteBlisscap</hediff>
+		<defName>VPE_AteBlisscap</defName>
+		<durationDays>0.25</durationDays>
+		<stages>
+			<li>
+				<label>high on blisscap</label>
+				<description>Oh man, I’m trippin’.</description>
+				<baseMoodEffect>14</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+
+
+
+
+
+</Defs>

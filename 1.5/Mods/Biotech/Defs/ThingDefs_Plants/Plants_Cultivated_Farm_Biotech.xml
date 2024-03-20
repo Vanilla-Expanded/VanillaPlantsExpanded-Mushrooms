@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>VPE_Plant_Toxpuff</defName>
+		<label>toxpuff</label>
+		<description>A small, green oval mushroom typically found in highly polluted areas. It puffs out tox gas when anyone steps on it.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<minifiedDef IsNull="True"/>
+		<tickerType>Normal</tickerType>
+		<thingClass>VanillaPlantsExpandedMushrooms.Plant_ReleasesGas</thingClass>
+		<graphicData>
+			<texPath>Things/Plant/Toxpuff</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<plant>
+			<neverBlightable>true</neverBlightable>
+			<burnedThingDef IsNull="True"/>
+			<growMinGlow>0</growMinGlow>
+		
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>5</growDays>
+			<lifespanDaysPerGrowDays>3.2</lifespanDaysPerGrowDays>
+			<harvestWork>180</harvestWork>
+			<sowWork>120</sowWork>
+			<harvestTag>Standard</harvestTag>
+			<dieIfLeafless>true</dieIfLeafless>
+			<topWindExposure>0</topWindExposure>
+			<cavePlantWeight>0.3</cavePlantWeight>
+			<visualSizeRange>0.3~0.65</visualSizeRange>
+			<maxMeshCount>9</maxMeshCount>
+			<pollution>PollutedOnly</pollution>
+			<sowResearchPrerequisites Inherit="False">
+				<li>ToxGas</li>
+			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Ground</li>
+				<li>VPE_Mushroom</li>
+			</sowTags>
+			<sowMinSkill>8</sowMinSkill>
+		</plant>
+	</ThingDef>
+</Defs>
