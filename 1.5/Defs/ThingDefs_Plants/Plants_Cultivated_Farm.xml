@@ -23,7 +23,7 @@
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>8</growDays>
-			<lifespanDaysPerGrowDays>3.75</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
 			<harvestWork>300</harvestWork>
 			<sowWork>180</sowWork>
 			<harvestTag>Wood</harvestTag>
@@ -113,7 +113,7 @@
 			<fertilityMin>0</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
 			<growDays>3</growDays>
-			<lifespanDaysPerGrowDays>3.33</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
 			<harvestWork>50</harvestWork>
 			<sowWork>45</sowWork>
 			<harvestTag>Standard</harvestTag>
@@ -153,7 +153,7 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growMinGlow>0</growMinGlow>
 			<growDays>9</growDays>
-			<lifespanDaysPerGrowDays>6</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
 			<harvestWork>240</harvestWork>
 			<sowWork>170</sowWork>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -196,7 +196,7 @@
 			<growMinGlow>0</growMinGlow>
 			<sowMinSkill>5</sowMinSkill>
 			<growDays>2.5</growDays>
-			<lifespanDaysPerGrowDays>4.8</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
 			<harvestWork>200</harvestWork>
 			<sowWork>1020</sowWork>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -243,7 +243,7 @@
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.1</fertilitySensitivity>
 			<growDays>8</growDays>
-			<lifespanDaysPerGrowDays>3.75</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
 			<harvestWork>1260</harvestWork>
 			<dieIfLeafless>true</dieIfLeafless>
 			<sowWork>200</sowWork>
@@ -341,7 +341,7 @@
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
 			<growDays>2</growDays>
-			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
 			<harvestWork>200</harvestWork>
 			<harvestTag>Standard</harvestTag>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -383,7 +383,7 @@
 			<fertilityMin>0</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<growDays>12</growDays>
-			<lifespanDaysPerGrowDays>4</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
 			<harvestWork>220</harvestWork>
 			<harvestTag>Standard</harvestTag>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -472,7 +472,7 @@
 			<fertilityMin>0</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<growDays>12</growDays>
-			<lifespanDaysPerGrowDays>7.166</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
 			<harvestWork>120</harvestWork>
 			<immatureGraphicPath>Things/Plant/Thermoregulus_Immature</immatureGraphicPath>
 			<harvestTag>Standard</harvestTag>
