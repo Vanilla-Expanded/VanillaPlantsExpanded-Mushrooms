@@ -7,28 +7,75 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="Bed_StoneSlab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>Defs/ThingDef[defName = "Bed_Kingsize"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>VPE_Plant_Lullabloom</li>
 					</value>
 				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="Bed_Simple"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-						<li>VPE_Plant_Lullabloom</li>
-					</value>
+
+				<!-- Backwards compatibility with previous versions, made for safety in case of issues during updating. -->
+				<!-- Parts of them will need removing in the future, either some time after Furniture Core updates, or in 1.6. -->
+				<!-- When updating, remove the conditional check and only include the "match" branch of every patch. -->
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name = "VFE_ChiseledBedBase"]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[@Name = "VFE_ChiseledBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+						<value>
+							<li>VPE_Plant_Lullabloom</li>
+						</value>
+					</match>
+					<!-- There was only singular slab (now chiseled) bed previously, so don't patch the double bed. -->
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Bed_StoneSlab"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+						<value>
+							<li>VPE_Plant_Lullabloom</li>
+						</value>
+					</nomatch>
 				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="Bed_Ergonomic"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-						<li>VPE_Plant_Lullabloom</li>
-					</value>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name = "VFE_SimpleBedBase"]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[@Name = "VFE_SimpleBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+						<value>
+							<li>VPE_Plant_Lullabloom</li>
+						</value>
+					</match>
+					<!-- There was only singular simple bed previously, so don't patch the double bed. -->
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Bed_Simple"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+						<value>
+							<li>VPE_Plant_Lullabloom</li>
+						</value>
+					</nomatch>
 				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="Bed_DoubleErgonomic"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-						<li>VPE_Plant_Lullabloom</li>
-					</value>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name = "VFE_ErgonomicBedBase"]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[@Name = "VFE_ErgonomicBedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+						<value>
+							<li>VPE_Plant_Lullabloom</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName = "Bed_Ergonomic"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VPE_Plant_Lullabloom</li>
+								</value>
+							</li>
+
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName = "Bed_DoubleErgonomic"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VPE_Plant_Lullabloom</li>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
 				</li>
 			</operations>
 		</match>
