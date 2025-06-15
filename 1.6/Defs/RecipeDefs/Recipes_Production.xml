@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>VPE_WeaveClothFromMycothread</defName>
+		<label>weave cloth from mycothread</label>
+		<description>Weaves cloth from mycothread.</description>
+		<jobString>Making cloth from mycothread.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>900</workAmount>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<targetCountAdjustment>50</targetCountAdjustment>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VPE_Mycothread</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VPE_Mycothread</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cloth>50</Cloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+</Defs>

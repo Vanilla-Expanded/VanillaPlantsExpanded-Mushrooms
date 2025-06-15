@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  <!-- ============= Growing ============= -->
+
+  <WorkGiverDef>
+    <defName>VPE_HarvestMushroom</defName>
+    <label>harvest mushroom crops</label>
+    <giverClass>VanillaPlantsExpandedMushrooms.WorkGiver_GrowerHarvestMushroom</giverClass>
+    <workType>Growing</workType>
+    <priorityInType>100</priorityInType>
+    <verb>harvest mushrooms</verb>
+    <gerund>harvesting mushrooms</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>VPE_SowMushroom</defName>
+    <label>sow mushroom crops</label>
+    <giverClass>VanillaPlantsExpandedMushrooms.WorkGiver_GrowerSowMushroom</giverClass>
+    <workType>Growing</workType>
+    <priorityInType>50</priorityInType>
+    <verb>sow mushrooms</verb>
+    <gerund>sowing mushrooms</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+
+  
+  
+ 
+
+</Defs>
