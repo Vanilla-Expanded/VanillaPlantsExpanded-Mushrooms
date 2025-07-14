@@ -58,7 +58,7 @@ namespace VanillaPlantsExpandedMushrooms
             {
                 return null;
             }
-            if (!PlantUtility.GrowthSeasonNow(c, map, wantedPlantDef))
+            if (c.GetVacuum(pawn.Map) >= 0.5f)
             {
                 return null;
             }
@@ -69,6 +69,10 @@ namespace VanillaPlantsExpandedMushrooms
                 {
                     return null;
                 }
+            }
+            if (!PlantUtility.GrowthSeasonNow(c, map, wantedPlantDef))
+            {
+                return null;
             }
             List<Thing> thingList = c.GetThingList(map);
             Zone_GrowingMushroom zone_Growing = c.GetZone(map) as Zone_GrowingMushroom;
