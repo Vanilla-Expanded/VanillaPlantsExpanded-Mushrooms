@@ -38,7 +38,7 @@ namespace VanillaPlantsExpandedMushrooms
             {
                 foreach (string allowed in element.allowedTerrains)
                 {
-                    Log.Message(terrainDef.defName);
+                   //Log.Message(terrainDef.defName);
                     if ((terrainDef.defName.Contains(allowed)) && c.Walkable(Map))
                     {
                         return true;
