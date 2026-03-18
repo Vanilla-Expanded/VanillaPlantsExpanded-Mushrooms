@@ -149,6 +149,8 @@ namespace VanillaPlantsExpandedMushrooms
                 yield return g;
             }
 
+            yield return new Command_Hide_ZoneGrow(this);
+
             yield return PlantToGrowSettableUtility.SetPlantToGrowCommand(this);
             yield return new Command_Toggle
             {

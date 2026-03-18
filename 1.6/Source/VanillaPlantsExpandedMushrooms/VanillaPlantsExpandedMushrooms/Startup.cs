@@ -48,6 +48,7 @@ namespace VanillaPlantsExpandedMushrooms
                 def.comps.Add(comp);
                 
             }
+            InternalDefOf.VPE_Plant_Lullabloom.GetCompProperties<CompProperties_Facility>().linkableBuildings.Add(def);
         }
 
        

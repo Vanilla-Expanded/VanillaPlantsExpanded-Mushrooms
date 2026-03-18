@@ -153,7 +153,7 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growMinGlow>0</growMinGlow>
 			<growDays>9</growDays>
-			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>36</lifespanDaysPerGrowDays>
 			<harvestWork>240</harvestWork>
 			<sowWork>170</sowWork>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -176,7 +176,7 @@
 		<defName>VPE_Plant_Lullabloom</defName>
 		<thingClass>VanillaPlantsExpandedMushrooms.Plant_IgnoresLight</thingClass>
 		<label>lullabloom</label>
-		<description>A special kind of mushroom that emits calming spores, ideal for planting next to a bed. Needs to be planted in a flower pot. Its presence soothes the sleeping individual, creating a more restful slumber and promoting overall comfort. Its gentle, sleep-inducing properties make it a favorite among colonists seeking a peaceful night's rest.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other plants, lullabloom ignores light levels for growth. Sunlight won't destroy it. It will still rest during the night period.\n\nNullifies the "disturbed sleep" thought.\n\nWill link to vanilla and Vanilla Furniture Expanded beds.</description>
+		<description>A special kind of mushroom that emits calming spores, ideal for planting next to a bed. Needs to be planted in a flower pot. Its presence soothes the sleeping individual, creating a more restful slumber and promoting overall comfort. Its gentle, sleep-inducing properties make it a favorite among colonists seeking a peaceful night's rest.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other plants, lullabloom ignores light levels for growth. Sunlight won't destroy it. It will still rest during the night period.\n\nNullifies the "disturbed sleep" thought.</description>
 		<graphicData>
 			<texPath>Things/Plant/Lullabloom</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -298,9 +298,9 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>RawFungus</harvestedThingDef>
 			<sowTags>
-				<li>Ground</li>
+				
 				<li>Decorative</li>
-				<li>VPE_Mushroom</li>
+				
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
 			<cavePlantWeight>0</cavePlantWeight>
@@ -467,6 +467,7 @@
 		<plant>
 			<neverBlightable>true</neverBlightable>
 			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
 			<burnedThingDef IsNull="True"/>
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<fertilityMin>0</fertilityMin>
